@@ -9,8 +9,11 @@ public:
 
         // Notes:
         // Naive approach with 2 loops gives O(n^2) complexity
-        // Better way: assume on ith day stock is sold, so keep a track of min value before ith index (stock is bought that day)
+        // Better way: assume on ith day stock is sold, so keep a track of min value in the left side (stock is bought that day)
         // and calculate the profit. Update profit and min_element in every iteration.
+
+        // Stock bought on global minima
+        // Stock sold on global (maxima after the minima)
         
         int profit = 0;
         int x = INT_MAX;
